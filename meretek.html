@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mérettáblázat</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>
+        <br>
+        Webáruház
+    </h1>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Galéria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Mérettáblázat</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-4">
+            <form class="form-inline">
+                <label for="price-slider" class="mr-2">Termékneve:</label>
+                <br>
+                <br>
+                <input class="form-control mr-2" type="search" placeholder="Search for a shirt" aria-label="Search">
+                <input id="price-slider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="[0,100]"/>
+                <button class="btn btn-outline-success my-2 my-sm-0 ml-2" type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="col-md-8">
+            <h2>Mérettáblázat</h2>
+            <p>Az adatok centiméterben érthetőek, hibhatár +-2 cm.</p>
+
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Méret</th>
+                    <th>Magasság (cm)</th>
+                    <th>Mellbőség (cm)</th>
+                    <th>Derékbőség (cm)</th>
+                    <th>Csípőbőség (cm)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>S</td>
+                    <td>160-165</td>
+                    <td>85-90</td>
+                    <td>65-70</td>
+                    <td>90-95</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>165-170</td>
+                    <td>90-95</td>
+                    <td>70-75</td>
+                    <td>95-100</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>170-175</td>
+                    <td>95-100</td>
+                    <td>75-80</td>
+                    <td>100-105</td>
+                </tr>
+                <tr>
+                    <td>XL</td>
+                    <td>175-180</td>
+                    <td>100-105</td>
+                    <td>80-85</td>
+                    <td>105-110</td>
+                </tr>
+                <tr>
+                    <td>XXL</td>
+                    <td>180-185</td>
+                    <td>105-110</td>
+                    <td>85-90</td>
+                    <td>110-115</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
